@@ -1,21 +1,29 @@
-# Day 6 – User and Group Management (Linux Upskill Challenge)
+# Linux Upskill Challenge – Day 6: Understanding Linux Filesystem and Disk Usage
 
-## 🔍 Objective
-Today’s focus was on understanding how to manage users and groups in Linux — essential for permissions, access control, and security.
+## 🧠 Overview
 
----
-
-## 📚 Topics Covered
-- Creating users and setting passwords
-- Adding users to groups
-- Creating groups
-- Checking current user and group IDs
-- Managing `/etc/passwd`, `/etc/shadow`, `/etc/group`, and `/etc/gshadow`
+Today’s challenge was about exploring the Linux file system structure and learning to check disk and system information using essential commands.
 
 ---
 
-## 🧪 Commands Practiced
+## 📂 Key Commands and Learnings
 
-### ✅ Add a new user
+### 🔹 Filesystem Hierarchy
+
 ```bash
-sudo adduser devstudent
+cd /
+ls -l
+
+## 🔹 Check Disk Usage (df)
+df -h
+
+## 🔹 Directory Size (du)
+sudo du -sh /var
+sudo du -sh /var/*
+
+🔹 Mounted Drives (mount, lsblk)
+mount | column -t
+lsblk
+
+🔹 Kernel/System Info (uname)
+uname -a
