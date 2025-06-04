@@ -1,4 +1,4 @@
-# Linux Upskill Challenge - Day 16: File Permissions & Ownership
+# Linux Upskill Challenge - Day 14: File Permissions & Ownership
 
 ## Key Commands
 
