@@ -1,28 +1,21 @@
-# Linux Upskill Challenge - Day 14: Process Management
-
-## Overview
-Learn to manage running processes in Linux using essential commands.
+# Linux Upskill Challenge - Day 14: File Permissions & Ownership
 
 ## Key Commands
 
-- `ps aux`  
-  List all running processes with detailed info.
+- `ls -l` – View file permissions
+- `chmod` – Change file permissions
+- `chown` – Change file ownership
+- `chgrp` – Change file group
 
-- `top`  
-  Interactive real-time process viewer. Press `q` to exit.
+## Examples
 
-- `pgrep <process_name>`  
-  Find process IDs by name.
-
-- `kill <PID>`  
-  Gracefully terminate a process by PID.
-
-- `kill -9 <PID>`  
-  Force kill a stubborn process.
+- `chmod u+x file` – Add execute permission for user
+- `chmod 754 file` – Numeric mode: rwxr-xr--
+- `sudo chown user file` – Change owner
+- `sudo chgrp group file` – Change group
 
 ## Notes
-- Process management is crucial for system control and troubleshooting.  
-- Use `ps` and `top` to monitor processes and system health.  
-- Always try a normal `kill` before forcing with `kill -9`.
 
----
+- Permissions: user | group | others
+- Numeric codes: r=4, w=2, x=1 (e.g. 7 = rwx, 5 = r-x)
+
